@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'gow';
+    font-weight: normal;
+    src: url('../fonts/GODOFWAR.TTF') format('truetype'); 
+}
+
+:root {
+    --textMain: 'Kanit';
+    --textGow: 'gow';
+
+    --n1: #46A7C2;
+    --n2: #0C9BC2;
+    --n3: #32798C;
+    --n4: #075D75;
+    --n5: #043542;
+}
+
+#voltar {
+    color: white;
+    position: absolute;
+    top: 2vh;
+    left: 2vw;
+}
+
+#voltar a {
+    color: white;
+    letter-spacing: 1px;
+}
+
+#voltar a:hover {
+    color: #0C9BC2;
+    transition: 1s;
+}
+
+body {
+    background: url(../images/fundo-form.png) no-repeat fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    text-align: center;
+    height: 15px;
+    position: absolute;
+    top: 125px;
+    font-size: 55px;
+    font-family: var(--textGow);
+    color: rgba(255, 255, 255, 0.862);
+    font-weight: 100;
+    animation: aparecerTitulo 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+.container .form {
+    position: relative;
+    background-color: #043542e8;
+    padding: 15px;
+    animation: aparecerForm 1s ease-out 1s forwards;
+    opacity: 0;
+    border-radius: 7px;
+}
+
+.container .titulos {
+    color: white;
+    font-family: var(--textMain);
+    font-weight: 600;
+    padding-top: 5px;
+}
+
+.lnr-eye {
+    position: absolute;
+    right: 20px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.container input {
+    padding: 0px 0 0px 5px;
+    font-family: var(--textMain);
+    color: var(--n5);
+    font-weight: 600;
+}
+
+.container input:focus {
+    outline: none;
+    cursor: auto;
+    border: 2px solid var(--n1);
+}
+
+.container input::placeholder {
+    color: var(--n1);
+}
+
+.container #confirmButton {
+    display: inline-block;
+    margin: 10px 0 0 calc(50% - 55px);
+}
+
+.container #confirmButton input {
+    width: 110px;
+    height: 23px;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.862);
+    background-color: var(--n4);
+    border: none;
+    letter-spacing: 1px;
+    font-family: var(--textGow);
+    border: 1px solid transparent;
+    border-radius: 7px;
+    font-size: 11px;
+}
+
+.container #confirmButton input:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.862);
+    color: var(--n4);
+    transition: 0.5s;
+}
+
+p a {
+    color: var(--n1);
+    font-size: 12px;
+    text-decoration: none;
+}
+
+p a:hover {
+    color: rgba(255, 255, 255, 0.862);
+    transition: 0.5s;
+}
+
+
+ @keyframes aparecerTitulo {
+    0% {
+        opacity: 0;
+        top: 0vh;
+    }
+    100% {
+        opacity: 1;
+        top: 125px;
+    }
+}
+
+@keyframes aparecerForm {
+    0% {
+        opacity: 0;
+        margin-top: 43vh;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 190px;
+    }
+}
+
+@media (max-height: 704px) {
+
+    .form {
+        
+    }
+
+}
