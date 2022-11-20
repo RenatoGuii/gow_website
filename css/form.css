@@ -20,6 +20,16 @@
     --n5: #043542;
 }
 
+body {
+    background: url(../images/fundo-form.png) no-repeat fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
 #voltar {
     color: white;
     position: absolute;
@@ -37,15 +47,6 @@
     transition: 1s;
 }
 
-body {
-    background: url(../images/fundo-form.png) no-repeat fixed;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-}
 
 h1 {
     text-align: center;
