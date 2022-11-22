@@ -149,7 +149,7 @@ a {
     height: 100%;
     margin: auto;
     margin-top: 10vh;
-    width: 90%;
+    width: 80%;
 }
 
 .conteudoPrincipal h1 {
@@ -184,7 +184,7 @@ a {
 .conteudoPrincipal img {
     display: block;
     margin: auto;
-    height: 320px;
+    height: 340px;
     width: 80%;
     max-width: 650px;
     padding-bottom: 20px;
